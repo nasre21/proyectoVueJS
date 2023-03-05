@@ -1,4 +1,5 @@
 <template>
+  <HelloWorld />
   <div class="barra-navegacion">
     <img class="logo" src="../assets/logo.png" alt="Logo de Vue">
     <div class="opciones">
@@ -10,8 +11,11 @@
 </template>
 
 <script>
+import HelloWorld from './HelloWorld.vue';
+
 export default {
-  name: 'BarraNavegacion'
+    name: "BarraNavegacion",
+    components: { HelloWorld }
 }
 </script>
 

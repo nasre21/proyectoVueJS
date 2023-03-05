@@ -1,4 +1,5 @@
 <template>
+  
   <div class="contact-form">
     <h2 class="h2">Contacta con nosotros</h2>
     <form @submit.prevent="handleSubmit">
