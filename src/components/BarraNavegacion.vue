@@ -1,11 +1,13 @@
 <template>
-  <HelloWorld />
+  <!-- <HelloWorld /> -->
   <div class="barra-navegacion">
-    <img class="logo" src="../assets/logo.png" alt="Logo de Vue">
-    <div class="opciones">
-      <div class="opcion">Conócenos</div>
-      <div class="opcion">Galería</div>
-      <div class="opcion">Home</div>
+    <div class="contenedor">
+      <img class="logo" src="../assets/logo.png" alt="Logo de Vue">
+      <div class="opciones">
+        <div class="opcion">Conócenos</div>
+        <div class="opcion">Galería</div>
+        <div class="opcion">Home</div>
+      </div>
     </div>
   </div>
 </template>
@@ -20,13 +22,24 @@ export default {
 </script>
 
 <style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .barra-navegacion {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: #00688b;
-  padding: 1%;
-  border: 0.2rem solid white;
+  /* border: 0.2rem solid white; */
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  margin: 0 auto;
+  padding: .5rem;
 }
 
 .logo {

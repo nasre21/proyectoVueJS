@@ -29,7 +29,7 @@ export default {
       },
       {
         id: 3,
-        url: require("@/assets/perro.jpg"),
+        url: require("@/assets/perros.jpg"),
         name: "image 3",
       },
     ]);

@@ -1,6 +1,6 @@
 <template>
-  <HelloWorld />
-  <PrimerComponente />
+  <!-- <HelloWorld />
+  <PrimerComponente /> -->
   <BarraNavegacion />
   <FormularioContacto />
   <ImagenesComponente />
