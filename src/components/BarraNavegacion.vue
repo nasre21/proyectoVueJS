@@ -31,7 +31,7 @@ export default {
 .barra-navegacion {
   align-items: center;
   background-color: #00688b;
-  border: 0.2rem solid white;
+  /* border: 0.2rem solid white; */
 }
 
 .contenedor {
