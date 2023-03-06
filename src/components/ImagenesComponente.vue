@@ -53,5 +53,6 @@ export default {
 }
 .h3 {
   text-align: center;
+  margin: 1rem;
 }
 </style>
