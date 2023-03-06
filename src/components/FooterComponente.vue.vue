@@ -25,12 +25,12 @@ setup() {
 <style scoped>
  .footer {
     background-color: #00688b;
-    padding: 0.2rem;
+    padding: 1rem;
   border: 0.2rem solid white;
  }
  .h4 {
     text-align: center;
-   margin-bottom: -0.8rem;
+   
     
 }
 .lista {
@@ -45,6 +45,6 @@ setup() {
 }
 .lista2{
    padding-left: 1rem;
-     margin-right: 2rem;  
-}
+   
+} 
 </style>

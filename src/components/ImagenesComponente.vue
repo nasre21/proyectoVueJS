@@ -46,13 +46,17 @@ export default {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   justify-content: space-around;
+
 }
 
 .contenedor-imagenes img {
   width: 70%;
+   margin-bottom: 2rem; 
+
 }
 .h3 {
   text-align: center;
   color: #00688b;
+  margin-top: 2rem;
 }
 </style>
