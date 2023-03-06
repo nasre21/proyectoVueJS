@@ -29,7 +29,7 @@ export default {
       },
       {
         id: 3,
-        url: require("@/assets/perros.jpeg"),
+        url: require("@/assets/perro.jpg"),
         name: "image 3",
       },
     ]);
@@ -53,5 +53,6 @@ export default {
 }
 .h3 {
   text-align: center;
+  color: #00688b;
 }
 </style>
