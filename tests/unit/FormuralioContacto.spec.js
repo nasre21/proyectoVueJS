@@ -33,7 +33,11 @@ describe("FormularioContacto", () => {
   
   test("formulario se envia correctamente", () => {
     const wrapper = mount(<FormularioContacto />);
-    const alertSpy = jest.spyOn(window, "alert");
+    
+    // Mock de window.alert
+    const alertMock = jest.fn();
+    global.alert = alertMock;
+    
     wrapper.setData({
       name: "Jane",
       surname: "Calamity",
@@ -42,14 +46,19 @@ describe("FormularioContacto", () => {
       email: "jane@example.com",
       password: "password123",
     });
+    
     wrapper.find("form").trigger("submit");
+    
     expect(wrapper.vm.name).toBe("");
     expect(wrapper.vm.surname).toBe("");
     expect(wrapper.vm.city).toBe("");
     expect(wrapper.vm.phone).toBe("");
     expect(wrapper.vm.email).toBe("");
     expect(wrapper.vm.password).toBe("");
-    expect(alertSpy).toHaveBeenCalledWith("El formulario se ha enviado con éxito");
-    alertSpy.mockRestore(); // Restaurar la función window.alert original después de la prueba
+    
+    expect(alertMock).toHaveBeenCalledWith("El formulario se ha enviado con éxito");
+    
+    // Restaurar la función window.alert original después de la prueba
+    alertMock.mockRestore();
   });
 });
