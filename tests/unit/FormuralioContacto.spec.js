@@ -63,19 +63,6 @@ describe("FormularioContacto", () => {
   });
 });
 
-// describe("Actualizacion del input name", () => {
-//   it("comprobar se actualiza la variable name cuando usuario cambia input name", () => {
-//     const wrapper = mount(<FormularioContacto />);
-
-//     // Simula que el usuario cumplimenta el campo name
-//     const inputName = wrapper.find("#name");
-//     inputName.setValue("Jane");
-
-//     // Comprueba que la variable se ha actualizado
-//     expect(wrapper.vm.name).toBe("Jane");
-//     // expect(wrapper.vm.name).toBe("May");
-//   });
-// });
 describe("Actualizacion del input name", () => {
   it("comprobar se actualiza la variable name cuando usuario cambia input name", () => {
     const wrapper = mount(FormularioContacto);
