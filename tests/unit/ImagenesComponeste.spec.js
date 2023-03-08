@@ -18,8 +18,11 @@ describe('ImagenesComponente', () => {
      });
     });
     describe('ImagenesComponente', () => {
+      
       const wrapper = mount(<ImagenesComponente />);
       const cantidad = wrapper.findAll('.foto');
-        expect(wrapper.findAll('.foto')).toHaveLength(3);
-        });
-        
+      expect(wrapper.findAll('.foto')).toHaveLength(3);
+      //  ---esperamos renderizar 4 imagenes pero solo hay 3 
+      // expect(wrapper.findAll('.foto')).toHaveLength(4);
+         });
+      
