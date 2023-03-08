@@ -21,7 +21,5 @@ describe('ImagenesComponente', () => {
       const wrapper = mount(<ImagenesComponente />);
       const cantidad = wrapper.findAll('.foto');
         expect(wrapper.findAll('.foto')).toHaveLength(3);
-// ------como esperamos rerendizar 4 imagenes y solo hay 3 daria error--
-        // expect(wrapper.findAll('.foto')).toHaveLength(4);
         });
         
