@@ -7,11 +7,11 @@ describe('ImagenesComponente', () => {
     it('montar', () => {
         const wrapper = mount(<ImagenesComponente />);
         expect(wrapper.find('.h3').text()).toBe("Imagenes de prueba para hacer test con jest")
-        expect(wrapper.find('.h3').html()).not.toBe("Texto aleatorio")
+        expect(wrapper.find('.h3').html()).not.toBe("Cualquier texto")
       });
     })
     describe('ImagenesComponente', () => {
-     it('tiene tres imagenes', () => {
+     it('contiene imagenes', () => {
      const wrapper = mount(<ImagenesComponente />);
      const imagenes = wrapper.find('.imagenes');
      expect(imagenes.exists()).toBe(false);
@@ -21,5 +21,7 @@ describe('ImagenesComponente', () => {
       const wrapper = mount(<ImagenesComponente />);
       const cantidad = wrapper.findAll('.foto');
         expect(wrapper.findAll('.foto')).toHaveLength(3);
+// ------como esperamos rerendizar 4 imagenes y solo hay 3 daria error--
+        // expect(wrapper.findAll('.foto')).toHaveLength(4);
         });
         
