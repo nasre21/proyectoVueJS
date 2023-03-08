@@ -5,6 +5,7 @@
       <img
         v-for="image in images"
         :key="image.id"
+        :class="image.animales"
         :src="image.url"
         :alt="image.name"
       />
@@ -18,16 +19,19 @@ export default {
   setup() {
     const images = ref([
       {
+        animales: "foto",
         id: 1,
         url: require("@/assets/gato.jpeg"),
         name: "image 1",
       },
       {
+        animales: "foto",
         id: 2,
         url: require("@/assets/cerdito.jpeg"),
         name: "image 2",
       },
       {
+        animales: "foto",
         id: 3,
         url: require("@/assets/perros.jpg"),
         name: "image 3",
