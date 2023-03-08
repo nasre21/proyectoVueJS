@@ -17,3 +17,9 @@ describe('ImagenesComponente', () => {
      expect(imagenes.exists()).toBe(false);
      });
     });
+    describe('ImagenesComponente', () => {
+      const wrapper = mount(<ImagenesComponente />);
+      const cantidad = wrapper.findAll('.foto');
+        expect(wrapper.findAll('.foto')).toHaveLength(3);
+        });
+        

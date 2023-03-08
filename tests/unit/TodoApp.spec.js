@@ -7,7 +7,7 @@ test('renders a todo', () => {
 
   const todo = wrapper.get('[data-test="todo"]')
 
-  expect(todo.text()).toBe('Learn Vue.js 3')
+  expect(todo.text()).toBe('Cerdito')
 })
 
 test('completes a todo', async () => {

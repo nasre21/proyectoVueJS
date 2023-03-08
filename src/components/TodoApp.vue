@@ -1,6 +1,6 @@
 <template>
   <div class="contenedor-todo">
-    <h1>To do List:</h1>
+    <h1>Mascotas:</h1>
     <div
       v-for="todo in todos"
       :key="todo.id"
@@ -33,7 +33,7 @@ export default {
       todos: [
         {
           id: 1,
-          text: 'Learn Vue.js 3',
+          text: 'Cerdito',
           completed: false
         }
       ]
