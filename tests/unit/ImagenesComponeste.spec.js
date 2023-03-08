@@ -20,9 +20,3 @@ describe('ImagenesComponente', () => {
 
   
 
-describe("hacer test con v-for", ()=>{
-  test("tests", ()=>{
-
-
-  })
-})
