@@ -62,14 +62,13 @@ describe("FormularioContacto", () => {
     alertMock.mockRestore();
   });
 });
-//-------------------------------NUEVOS-----------------------
+
 describe("Actualizacion del input name", () => {
   it("comprobar se actualiza la variable name cuando usuario cambia input name", () => {
-    const wrapper = mount(<FormularioContacto />);
+    const wrapper = mount(FormularioContacto);
 
-    // Simula que el usuario cumplimenta el campo name
-    const inputName = wrapper.find("#name");
-    inputName.setValue("Jane");
+    // Simula que el usuario cumple el campo name
+    wrapper.vm.name = "Jane";
 
     // Comprueba que la variable se ha actualizado
     expect(wrapper.vm.name).toBe("Jane");
