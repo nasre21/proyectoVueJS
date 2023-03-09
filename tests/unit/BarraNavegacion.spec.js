@@ -7,7 +7,7 @@ describe('BarraNavegacion', () => {
     const wrapper = mount(<BarraNavegacion />);
     const logo = wrapper.find('.logo');
 
-    expect(logo.exists()).toBe(true);
+    expect(logo.exists()).toBeTruthy();
   });
 
   it('tiene tres cuadros de texto', () => {
